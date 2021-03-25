@@ -1,0 +1,24 @@
+{
+  "name": "ATM_Node_Project",
+  "version": "1.0.0",
+  "description": "ATM Project from week 3.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/A-Mosher/ATM-Node.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/A-Mosher/ATM-Node/issues"
+  },
+  "homepage": "https://github.com/A-Mosher/ATM-Node#readme",
+  "dependencies": {
+    "prompt-sync": "^4.2.0"
+  }
+}
