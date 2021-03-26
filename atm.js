@@ -12,28 +12,39 @@ const accountInfo = require('./account');
 //console.log(accountInfo.userBalance);
 
 
-// function getBalance(){}
+//  function getBalance(){
+//      console.log("Your current balance is " + accountInfo.userBalance + ".");
+//       return(accountInfo.userBalance)
+//  }
 
-// function withdraw(){}
+// function withdraw(amountToWithdraw, currentBalance){
+//}
 
-// function deposit(){}
+// function deposit(amountToBeDeposited, currentBalance){
 
- function validatePin(){
- let userInput = prompt ("Please enter your Personal Identification Number.");
+// }
+let userInput = prompt ("Please enter your Personal Identification Number.");
 
+function validatePin(userInput){
 
- let pinEntered;
-if(pinEntered === accountInfo.userPin){
-    return true;
+    userInput = prompt ("Please enter your Personal Identification Number.");
+
+    if(userInput === accountInfo.userPin){
+        console.log("Correct PIN")
+        return true;
     }
-else(pinEntered !== accountInfo.userPin);{
-    alert("Incorrect PIN entered. Please try again.");
-    userInput;
-    }
+
+    else(userInput !== accountInfo.userPin)
+        alert("Incorrect PIN entered. Please try again.");
+
 }
+//let userInput = prompt ("Please enter your Personal Identification Number.");
+
+validatePin(userInput);
+
 //console.log("correct PIN");
 //return("correct PIN");
 
-module.exports = {
-    accountInfo: accountInfo,
-}
+// module.exports = {
+   // accountInfo: accountInfo,
+//}
