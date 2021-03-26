@@ -1,7 +1,6 @@
 "use strict";
 
+const prompt = require('prompt-sync')();
 
+const atmMod = require('./atm');
 
-
-
-console.log(5)

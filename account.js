@@ -1,17 +1,28 @@
+"use strict";
+
+const prompt = require('prompt-sync')();
+
 let userPin = 1234;
 
-let userBalance = "200.00";
+let userBalance = 200.00;
 
-let userInput = prompt ("Please enter your Personal Identification Number.")
 
-let pinEntered;
-if(pinEntered == userPin){
-    return true;
+// let userInput = prompt ("Please enter your Personal Identification Number."); 
+
+// let pinEntered;
+// if(pinEntered == userPin){
+//     return true;
+// }
+// else(pinEnter !== userPin);{
+//     alert("Incorrect PIN entered. Please try again.");
+//     userInput;
+// }
+
+// console.log("correct PIN");
+// return("correct PIN");
+
+module.exports = {
+    userPin: userPin,
+    userBalance: userBalance,
 }
-else(pinEnter !== userPin);{
-    alert("Incorrect PIN entered. Please try again.");
-    userInput;
-}
-
-console.log("correct PIN");
-return("correct PIN");
+//console.log(module);
