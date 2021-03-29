@@ -4,7 +4,6 @@
 
 const prompt = require('prompt-sync')();
 
-const account = require('./account');
 const accountInfo = require('./account');
 
 
@@ -19,7 +18,7 @@ function getBalance(){
   }
 getBalance;
 
-function withdraw(amountToWithdraw, currentBalance){
+function userWithdraw(amountToWithdraw, currentBalance){
      
      let userInput = prompt("How much would you like to withdraw?");
      let amountToWithdraw = userInput;
@@ -30,7 +29,7 @@ function withdraw(amountToWithdraw, currentBalance){
 
 }
 
- function deposit(amountToDeposit, currentBalance){
+ function userDeposit(amountToDeposit, currentBalance){
 
     let userInput = prompt("How much would you like to deposit?");
     let amountToDeposit = userInput;
@@ -64,6 +63,10 @@ validatePin(userInput);
 //console.log("correct PIN");
 //return("correct PIN");
 
-// module.exports = {
-   // accountInfo: accountInfo,
-//}
+module.exports = {
+    validatePin: validatePin,
+    userDeposit: userDeposit,
+    userWithdraw: userWithdraw,
+    getBalance: getBalance,
+
+}
