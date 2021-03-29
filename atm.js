@@ -4,6 +4,7 @@
 
 const prompt = require('prompt-sync')();
 
+const account = require('./account');
 const accountInfo = require('./account');
 
 
@@ -12,17 +13,35 @@ const accountInfo = require('./account');
 //console.log(accountInfo.userBalance);
 
 
-//  function getBalance(){
-//      console.log("Your current balance is " + accountInfo.userBalance + ".");
-//       return(accountInfo.userBalance)
-//  }
+function getBalance(){
+      console.log("Your current balance is " + accountInfo.userBalance + ".");
+       return(accountInfo.userBalance)
+  }
+getBalance;
 
-// function withdraw(amountToWithdraw, currentBalance){
-//}
+function withdraw(amountToWithdraw, currentBalance){
+     
+     let userInput = prompt("How much would you like to withdraw?");
+     let amountToWithdraw = userInput;
+     let currentBalance = accountInfo.userBalance;
+     let makeAWithdraw = (amountToWithdraw - currentBalance);
+     console.log("You have completed your withdraw.");
+     return makeAWithdraw;
 
-// function deposit(amountToBeDeposited, currentBalance){
+}
 
-// }
+ function deposit(amountToDeposit, currentBalance){
+
+    let userInput = prompt("How much would you like to deposit?");
+    let amountToDeposit = userInput;
+    let currentBalance = accountInfo.userBalance;
+    let makeADeposit = (amountToDeposit + currentBalance);
+    console.log("You have completed your Deposit.");
+    return makeADeposit;
+
+}
+
+
 let userInput = prompt ("Please enter your Personal Identification Number.");
 
 function validatePin(userInput){
@@ -34,9 +53,9 @@ function validatePin(userInput){
         return true;
     }
 
-    else(userInput !== accountInfo.userPin)
+    else{
         alert("Incorrect PIN entered. Please try again.");
-
+    }
 }
 //let userInput = prompt ("Please enter your Personal Identification Number.");
 
