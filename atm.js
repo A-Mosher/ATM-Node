@@ -16,7 +16,7 @@ function getBalance(){
       console.log("Your current balance is " + accountInfo.userBalance + ".");
        return(accountInfo.userBalance)
   }
-getBalance;
+getBalance();
 
 function userWithdraw(amountToWithdraw, currentBalance){
      
@@ -56,7 +56,8 @@ function validatePin(userInput){
         alert("Incorrect PIN entered. Please try again.");
     }
 }
-//let userInput = prompt ("Please enter your Personal Identification Number.");
+
+let userInput = prompt ("Please enter your Personal Identification Number.");
 
 validatePin(userInput);
 
